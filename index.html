@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="pagina1.css">
+
+</head>
+<body>
+  
+  <div class="letreiro-container">
+    <div class="letreiro">
+        <span>seja bem vindo</span>
+        <span>tenha um ótimo aprendizado</span>
+        <span>bons estudos</span>
+        <span>seja bem vindo</span>
+        <span>tenha um ótimo aprendizado</span>
+        <span>bons estudos</span>
+    </div>
+   
+  </div>
+
+    <div class="titulo">
+      <h1 >Matemática</h1>
+      <h2 class="h2-padrao">Aprenda a converter temperaturas e muito mais!</h2>
+   
+   <div class="recado">
+    <span>!</span> este site é apenas um projeto de estudo, não é um site oficial, não tem fins lucrativos, e não tem relação com nenhuma instituição de ensino. !
+   </div>
+   
+   <div class="tema">
+   <div class="nome">
+  <label for="name">digite seu nome (opcional)</label>
+  <input type="text" id="name" placeholder="seu nome aqui" oninput="atualizarLetreiro()">
+</div> 
+
+<button class="botaotema" id="botaotema" onclick="mudardesign()">
+  <i class="material-symbols-outlined">colors</i>mudar tema
+</button>
+ 
+
+</div>
+   </div>
+
+<div class="imagem" id="imagem">
+  <div class="texto1" id="texto1">
+     <h1 class="fonte-padrao"> O Que é Matemática?</h1><p>
+No seu cerne, a matemática lida com padrões e estruturas. Ela busca identificar, classificar 
+e explorar essas relações abstratas, utilizando a lógica e o raciocínio dedutivo como suas principais ferramentas. A matemática nos permite quantificar, medir e modelar fenômenos,
+ desde os mais simples cálculos do dia a dia até as complexas teorias que descrevem o universo.
+    </p> 
+    
+<div class="texto2" id="texto2">
+   <h2 class="h2-padrao">Ramos da Matemática</h2>
+     <p>A matemática é um campo vasto, dividido em diversas áreas de estudo: <br><br> <span class="destaque-padrao">Aritmética:</span> O estudo dos números e das operações básicas (adição, subtração, multiplicação, divisão). <br>
+    <br> <span class="destaque-padrao">Álgebra:</span> Lida com símbolos e regras para manipular esses símbolos, permitindo a generalização de problemas e a resolução de equações. <br><br>
+     <span class="destaque-padrao">Geometria:</span> O estudo das formas, tamanhos, posições relativas de figuras e das propriedades do espaço. <br> <br> <span class="destaque-padrao"> Cálculo:</span> Uma área fundamental que explora a mudança e o movimento, 
+     dividindo-se em cálculo diferencial (taxas de variação) e cálculo integral (acumulação de quantidades). <br><br> <span class="destaque-padrao">Estatística e Probabilidade:</span>  Ferramentas para coletar, analisar, 
+     interpretar, apresentar e organizar dados, além de modelar a incerteza. <br><br><span class="destaque-padrao">Lógica Matemática:</span> Estuda os princípios do raciocínio válido e da inferência. <br><br>
+      <span class="destaque-padrao">Teoria dos Números:</span> Dedicada ao estudo das propriedades dos números inteiros.
+</p>
+</div>
+ </div>
+ 
+      <img src="imagem-calculadora.png" alt="imagem-matematica">
+ </div>
+
+ <div class="temperatura">
+  <div class="fundotexto-t">
+  <h1 class="fonte2-padrao">porque saber converter temperaturas?</h1>
+   <p>Saber converter temperaturas é mais útil no dia a dia do que parece, especialmente em um mundo cada vez mais conectado. 
+    Embora no Brasil usemos principalmente a escala Celsius (°C), outras escalas como Fahrenheit (°F) e Kelvin (K) são comuns 
+    em diferentes contextos e países.
+</p><br>
+  <p class="p2">Aqui estão algumas razões e exemplos práticos que mostram a importância de saber converter temperaturas:</p><br>
+  <p><h3>Mecânica e eletrônica:</h3>  Motores, baterias e sensores trabalham com limites de temperatura.
+
+ Algumas especificações vêm em Fahrenheit ou Kelvin.<h3>Profissões específicas:</h3>Cientistas, meteorologistas, engenheiros, 
+ técnicos e até programadores que fazem apps de clima precisam lidar com conversões. <h3> Culinária:</h3>  Muitos fornos ou receitas internacionais usam Fahrenheit.
+ <br>  Exemplo: <br>
+ 180°C = 356°F <br>
+ Se não converter certo, pode queimar ou não assar direito.<br> <h3> Ciência e tecnologia </h3>Em química, física e engenharia, muitas fórmulas usam Kelvin ou Celsius.
+
+ Climas extremos (negativos ou muito altos) também exigem precisão. <h3>Uso diário em diferentes países:</h3>Brasil usa graus Celsius (°C)
+ Estados Unidos usam graus Fahrenheit (°F)
+ Cientistas muitas vezes usam Kelvin (K)
+ Se você viaja, assiste vídeos, lê receitas ou notícias de fora, precisa entender essas conversões.
+</p>
+
+
+  <div class="calculadora2" id="calculadora2">
+
+    <h1 class="fonte-padrao">calcular temperatura</h1>
+
+    <label for="celsius">temperatura em celsius (°C):</label>  
+    <input type="number" id="celsius">
+
+    <button onclick="calculartemperaturaF()">calcular celsius (°C) para  fahrenheit (°F)</button>
+
+    <button onclick="calculartemperaturak()">calcular celsius (°C) para Kelvin (K)</button>
+    
+    <p id="resultado2"></p>
+
+    <label for="Kelvin">temperatura em Kelvin (K)</label>
+    <input type="number" id="Kelvin">
+
+    <button onclick="calculartemperaturakprac()">calcular Kelvin (K) para celsius (°C)</button>
+    <button onclick="calculartemperaturakpraf()">calcular Kelvin (K) para  fahrenheit (°F)</button>
+
+    <p id="resultado3"></p> 
+    <label for="fahrenheit">temperatura em fahrenheit (°F)</label> 
+    <input type="number" id="fahrenheit">
+
+    <button onclick="calculartemperaturafparac()">calcular fahrenheit °F para celsius °C</button>
+    <button onclick="calculartemperaturafparak()">calcular fahrenheit °F para kelvin K</button>
+
+    <p id="resultado4"></p>
+
+  </div>
+  
+  <iframe src="https://www.youtube.com/embed/nLn5BxL4Cn4?si=DPHfHzfGN8bNKr9J" title="YouTube video player" 
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+ <div class="informacao-video" id="informacao-video">
+   <h1 class="fonte-padrao">Informação Adicional</h1>
+   <p>Para aprofundar seus conhecimentos sobre conversão de temperaturas, 
+   recomendamos assistir a um vídeo explicativo que detalha as fórmulas e exemplos práticos.
+   </p>
+   <p>Abaixo, você encontrará um link para uma playlist completa no YouTube, onde poderá aprender mais sobre o assunto.</p>
+
+   <ul>
+      <li><a href="https://www.youtube.com/watch?v=nLn5BxL4Cn4&list=PLNfWNKz4iEr_fD8KrnGbyAP822wySVI73" target="_blank" rel="noopener">Playlist de aulas no youtube</a></li>
+   </ul>
+  </div>
+
+    <h1 class="fonte2-padrao">Conversão de Temperaturas</h1>
+    <p>Para converter temperaturas entre as escalas Celsius, Fahrenheit e Kelvin, usamos as seguintes fórmulas:</p>
+    
+    <div class="fórmulas">
+      <ul>
+        <li><strong>Celsius para Fahrenheit:</strong> F = (C × 9/5) + 32</li>
+        <li><strong>Fahrenheit para Celsius:</strong> C = (F - 32) × 5/9</li>
+        <li><strong>Celsius para Kelvin:</strong> K = C + 273,15</li>
+        <li><strong>Kelvin para Celsius:</strong> C = K - 273,15</li>
+        <li><strong>Fahrenheit para Kelvin:</strong> K = (F - 32) × 5/9 + 273,15</li>
+        <li><strong>Kelvin para Fahrenheit:</strong> F = (K - 273,15) × 9/5 + 32</li>
+      </ul>
+    </div>
+
+    </div>
+
+    <div class="quiz">
+    <p class="p2">Vamos praticar com um exemplo simples: Qual é a temperatura de 25°C em Fahrenheit?</p>
+    <p>Usando a fórmula: F = (25 × 9/5) + 32 = 77°F</p>
+
+    <p>escolha a resposta correta abaixo:</p>
+   <input type="radio" id="opcao1" name="resposta" onclick="verificarResposta('77')">
+  <label for="opcao1">77°F</label>
+
+  <input type="radio" id="opcao2" name="resposta" onclick="verificarResposta('80')">
+  <label for="opcao2">80°F</label>
+
+  <input type="radio" id="opcao3" name="resposta" onclick="verificarResposta('75')">
+  <label for="opcao3">75°F</label>
+
+  <input type="radio" id="opcao4" name="resposta" onclick="verificarResposta('70')">
+  <label for="opcao4">70°F</label>
+
+  <div class="resposta" id="resultado"></div>
+
+  </div>     
+  
+
+  <div class="consumo" id="consumo">
+  <h1>calcular consumo de combustivel</h1>
+  <p>Calcular o consumo de combustível é essencial para entender a eficiência do veículo e
+  planejar viagens. A fórmula básica é:</p>
+  <p>Consumo (km/l) = Distância percorrida (km) / Combustível consumido (litros)</p>
+  <p>Por exemplo, se você percorreu 300 km e consumiu 20 litros de combustível, o consumo é:<span class="destaque-padrao">= 300 km / 20 l = 15 km/l</span></p>
+  
+  <p>Isso significa que o veículo percorre 15 km para cada litro de combustível consumido. Essa informação é útil para calcular custos de viagem, planejar paradas para abastecimento e avaliar a eficiência do veículo.</p>
+  <p>Além disso, o consumo de combustível pode variar dependendo de fatores como o tipo de estrada, condições climáticas e estilo de condução. Portanto, é importante monitorar regularmente o consumo para otimizar o uso do combustível e reduzir os custos operacionais.</p>
+  <p>Por exemplo, se você planeja uma viagem de 500 km e seu veículo tem um consumo médio de 12 km/l, você pode calcular a quantidade de combustível necessária:</p>
+  <p>Combustível necessário = Distância / Consumo = 500 km / 12 km/l = aproximadamente 41,67 litros</p>
+  <p>Isso significa que você precisará de cerca de 41,67 litros de combustível para completar a viagem de 500 km. Com essas informações, você pode planejar melhor sua viagem, considerando paradas para abastecimento e custos.</p>
+
+  
+ <div id="calculadora" class="calculadora">
+
+   <h1 class="fonte-padrao">calcular média de consumo de combustivel</h1>
+
+   <label for="distancia">distância percorrida (km):</label>
+   <input type="number" id="distancia" step="1"><br><br>
+
+   <label for="combustivel">combustivel consumido (litros):</label>
+   <input type="number" id="combustivel" step="1"><br><br>
+
+   <button onclick="calcularconsumo()">calcular </button>
+
+    <p id="resultadoconsumo"></p>
+  </div>
+</div>
+</div>
+  
+
+   <div id="raiz2" class="raiz2">
+
+    <h1 class="fonte-padrao">raiz quadrada</h1>
+ 
+    <label for="raiz">digite um número</label>
+    <input type="number" id="raiz">
+
+    <button onclick="calcularraiz()">calcular</button>
+
+    <p id="resultadoraiz"></p>
+  </div>
+
+  <div id="calculoporcentagem" class="calculoporcentagem">
+
+    <h1 class="fonte-padrao">calcular porcentagem</h1>
+       
+    <label for="porcentagem">porcentagem ( % )</label>
+    <input type="number" id="porcentagem"> 
+
+    <label for="valor">valor (R$)</label>
+    <input type="number" id="valor">
+
+    <button onclick="calcularporcentagem()">calcular</button>
+    
+    <p id="resultado5"></p>
+
+</div>
+</body>
+<script src="pagina1.js"></script>
+</html>    
