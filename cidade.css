@@ -34,7 +34,7 @@ body{
   min-height: 60vh;
   background-image:
     linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-    url('./img/ChatGPT\ Image\ 23\ de\ ago.\ de\ 2025\,\ 17_20_46.png');
+    url('ChatGPT\ Image\ 23\ de\ ago.\ de\ 2025\,\ 17_20_46.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,6 +69,10 @@ main{
 .card >ul{
   margin-left: 20px;
 }
+.historia{
+  border-bottom: darkgray 2px solid;
+  padding: 20px;
+}
 
 .informacoes-importante{
   display: flex;
@@ -84,8 +88,8 @@ main{
   width: 50%;
 }
 
-.informacoes-importante> .informacoes span{
-  margin-bottom: 15px;
+.informacoes > span{
+  margin-bottom: 20px;
   
 }
 .informacoes-importante> .mapa{
@@ -96,12 +100,29 @@ main{
   margin-bottom: 20px;
   
 }
+.info-refencias{
+  display: flex;
+  max-width: 100%;
+  justify-self: center;
+  margin-top: 30px;
 
+}
+
+.referencias{
+  margin: 20px;
+  overflow: hidden;
+}
 @media (max-width: 1000px) {
   .hero {
     background-position: left center; 
     padding: 4rem 1rem;
   }
+
+.info-refencias{
+  display: flex;
+  flex-direction: column;
+
+}
 
 }
 
